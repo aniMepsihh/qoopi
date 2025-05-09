@@ -1,0 +1,23 @@
+.main__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.nav-container {
+    list-style: none;
+    display: flex; /* Делаем список горизонтальным */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    gap: 32px; /* Расстояние между пунктами */
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.nav__list li {
+    position: relative;
+}
+
+.nav-link.active {
+    color: #f1f1f1;
+}

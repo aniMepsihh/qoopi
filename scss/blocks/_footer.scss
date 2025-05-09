@@ -1,0 +1,28 @@
+footer {
+  color: #8A8A8A;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.footer-content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+  
+  .privacy-link {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .privacy-link:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+  }

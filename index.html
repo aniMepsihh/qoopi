@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="script.js" defer></script>
+    <script src="./js form/blogger-modal.js" defer></script>
+    <script src="./js form/brand-modal.js" defer></script>
+    <script src="./js form/seller-modal.js" defer></script>
+    <script src="./js form/arrowSocial.js" defer></script>
+    <title>qoopi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="header__logo">
+                <img class="main_logo" src="img/logo/main_logo.svg" alt="">
+           </div>
+           <div class="header__menu">
+            <button class="burger-btn" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="menu-overlay" id="menuOverlay">
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="#home">О qoopi</a></li>
+                        <li><a href="#blogers">Блогерам</a></li>
+                        <li><a href="#brends">Брендам</a></li>
+                        <li><a href="#sellers">Селлерам</a></li>
+                    </ul>
+                </div>
+                <button class="menu-content__button">Задать вопрос</button>
+            </div>
+           </div>
+        </div>
+    </header>
+    <main>
+        <div class="background-changer">
+            <div class="bg-image active" data-target="home" style="background-image: url('img/bg/home-bg.svg');"></div>
+            <div class="bg-image" data-target="blogers" style="background-image: url('img/bg/blogers-bg.svg');"></div>
+            <div class="bg-image" data-target="brends" style="background-image: url('img/bg/brends-bg.svg');"></div>
+            <div class="bg-image" data-target="sellers" style="background-image: url('img/bg/sellers-bg.svg');"></div>
+        </div>
+        <div class="container">    
+            <nav class="main__nav">
+                <div class="nav-container">
+                    <a href="#" class="nav-link active" data-target="home">О qoopi</a>
+                    <a href="#" class="nav-link" data-target="blogers">Блогерам</a>
+                    <a href="#" class="nav-link" data-target="brends">Брендам</a>
+                    <a href="#" class="nav-link" data-target="sellers">Селлерам</a>
+                </div>
+            </nav>
+            
+            <!-- Контейнер контента -->
+            <div class="content-container">
+                <div class="content-container__home">
+                    <div class="section__content">
+                        <section id="home" class="content-section active">
+                            <h2>Создайте собственную <br>витрину на qoopi</h2>
+                            <p>Публикуйте обзоры, распаковки или просто добавляйте товары на свою витрину</p>
+                            <button class="content-section__button">Создать витрину</button>                    
+                        </section>
+                    </div>
+                    <div class="section__carousel">
+                        <div class="carousel-container">
+                            <div class="media-stack" id="carousel1">
+                                <!-- Фото 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline1.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo1.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline2.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>                                        
+                                        <source src="/carousel/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline3.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo2.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline4.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline5.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo3.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline6.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video3.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline7.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo4.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline8.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video4.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Вторая карусель (видео-фото) -->
+                        <div class="carousel-container">
+                            <div class="media-stack" id="carousel2">
+                                <!-- Видео 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline9.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video5.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline10.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo5.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline11.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video6.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline12.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo6.png" alt="" class="image">
+                                </div>
+                                <!-- Видео 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline13.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video7.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline14.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo7.png" alt="" class="image">
+                                </div>
+                                <!-- Видео 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline15.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video8.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline16.png" alt="" class="outline-photo">                                   
+                                    <img src="/carousel/photo8.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-container__blogers">
+                    <div class="section__content">
+                        <section id="blogers" class="content-section">
+                            <h2>Рекомендуйте любимые <br>товары и бренды <br>и зарабатывайте</h2>
+                            <p>Публикуйте обзоры, распаковки или просто добавляйте товары на свою витрину</p>
+                            <button class="content-section__button" id="openModalBtn">Создать витрину</button>
+                        </section>
+                    </div>
+                    <div class="media-section">
+                            <div class="video-photo-container">
+                                <div class="video-container">
+                                    <video class="blogers-video" autoplay loop muted playsinline>
+                                        <source src="blogers/blogers-video.mp4" type="video/mp4">
+                                    </video>
+                                    <img src="blogers/blogers-video__outline.png" class="video-mask" alt="Video mask">
+                                </div>
+                                <img src="blogers/blogers-photo.jpg" class="blogers-photo" alt="Blogers photo">
+                                <img src="blogers/photo_outline.png" class="blogers-photo" alt="">
+                            </div>
+                            <img src="blogers/blogers-phone.png" class="phone-image" alt="Phone">
+                    </div>
+                </div>
+                
+                
+                <div class="content-container__brends">
+                    <div class="section__content">
+                        <section id="brends" class="content-section">
+                            <h2>Продвигайте свои <br>товары и бренд <br>через витрины блогеров <br>и экспертов</h2>
+                            <p>Заказывайте распаковки или просто разрешите добавить товары на свою витрину в qoopi</p>
+                            <button class="content-section__button" id="openBrandModalBtn">Создать витрину</button>
+                        </section>
+                    </div>
+                    <div class="section__carousel-brends">
+                        <div class="carousel-container-brends">
+                            <div class="media-stack" id="carousel-brends">
+                                <!-- Фото 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline1.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo1.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 1 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline2.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>                                        
+                                        <source src="/carousel/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline3.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo2.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 2 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline4.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline5.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo3.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 3 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline6.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video3.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <!-- Фото 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline7.png" alt="" class="outline-photo">
+                                    <img src="/carousel/photo4.jpg" alt="" class="image">
+                                </div>
+                                <!-- Видео 4 -->
+                                <div class="media-item">
+                                    <img src="/carousel/outline8.png" alt="" class="outline-video">
+                                    <video loop muted autoplay playsinline>
+                                        <source src="/carousel/video4.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-container__sellers">
+                    <div class="section__content">
+                        <section id="sellers" class="content-section">
+                            <h2>Внешний трафик <br>на карточки товаров <br>маркетплейсов <br>c оплатой за результат</h2>
+                            <p>Публикуйте обзоры, распаковки или просто добавляйте товары на свою витрину</p>
+                            <button class="content-section__button" id="openSellerModalBtn">Создать витрину</button>
+                        </section>
+                    </div>
+                </div>
+                
+                <div class="modal-overlay" id="modal">
+                    <div class="modal-container">
+                      <!-- Заголовок и кнопка закрытия -->
+                      <div class="modal-header">
+                        <h3>Стать блогером на qoopi</h3>
+                        <button class="close-modal-btn" id="closeModalBtn">&times;</button>
+                      </div>
+                      <div>
+                        <p class="subtitle">
+                          Заполните анкету и мы свяжемся с вами в ближайшее время
+                        </p>
+                      </div>
+              
+                      <!-- Основное содержимое модалки -->
+                      <div class="modal-content">
+                        <form id="blogger-form">
+                          <!-- Группа полей ввода -->
+                          <div class="form-group">
+                            <label for="name" class="required">Имя и фамилия</label>
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              required
+                              placeholder="Константин Константинопольский"
+                            />
+                            <div class="error-message" id="name-error"></div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="email" class="required">Электронная почта</label>
+                            <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              placeholder="example@mail.com"
+                              required
+                            />
+                            <div class="error-message" id="email-error"></div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="phone" class="required">Номер телефона</label>
+                            <input
+                              type="tel"
+                              id="phone"
+                              name="phone"
+                              placeholder="+7"
+                              required
+                            />
+                            <div class="error-message" id="phone-error"></div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="social" class="required">Социальная сеть</label>
+                            <div class="custom-select">
+                              <select id="social" name="social" class="required" required>
+                                <option value="" disabled selected hidden class="placeholder">
+                                  Выберите социальную сеть
+                                </option>
+                                <option value="instagram">Instagram</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="tiktok">TikTok</option>
+                                <option value="other">Другая</option>
+                              </select>
+                              <!-- SVG-стрелка -->
+                              <svg
+                                class="select-arrow"
+                                width="12"
+                                height="8"
+                                viewBox="0 0 12 8"
+                                fill="none"
+                              >
+                                <path
+                                  d="M1 1L6 6L11 1"
+                                  stroke="#8A8A8A"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                />
+                              </svg>
+                            </div>
+                            <div class="error-message" id="social-error"></div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="account" class="required"
+                              >Ссылка на ваш аккаунт</label
+                            >
+                            <input
+                              type="url"
+                              id="account"
+                              name="account"
+                              placeholder="https://"
+                              required
+                            />
+                            <div class="error-message" id="account-error"></div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="followers" class="required"
+                              >Количество подписчиков</label
+                            >
+                            <input
+                              type="text"
+                              id="followers"
+                              name="followers"
+                              placeholder="Укажите количество"
+                              required
+                            />
+                            <div class="error-message" id="followers-error"></div>
+                          </div>
+                        </form>
+                      </div>
+                      <footer class="modal-footer">
+                        <div class="form-alert" id="form-alert">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <!-- Круг-обруч -->
+                            <circle
+                              cx="10"
+                              cy="10"
+                              r="9"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              fill="none"
+                            />
+                            <!-- Крестик -->
+                            <path
+                              d="M7 7L13 13M13 7L7 13"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                          <span>Заполните все поля</span>
+                        </div>
+                        <!-- Чекбоксы -->
+                        <div class="checkboxes">
+                          <div class="checkbox-group">
+                            <input type="checkbox" id="agreement" name="agreement" required />
+                            <label for="agreement"
+                              >Я принимаю условия&nbsp;
+                              <a href="/policy" target="_blank" class="text-link"
+                                >пользовательского соглашения</a
+                              ></label
+                            >
+                          </div>
+              
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              id="newsletter"
+                              name="newsletter"
+                              required
+                            />
+                            <label for="newsletter"
+                              >Я согласен получать письма от qoopi</label
+                            >
+                          </div>
+                        </div>
+              
+                        <!-- Кнопка отправки -->
+                        <button type="submit" class="submit-btn">Отправить заявку</button>
+                      </footer>
+                    </div>
+                  </div>
+                  <!-- Модальное окно для брендов -->
+                  <div class="modal-overlay" id="brandModal">
+                    <div class="modal-container">
+                      <div class="modal-header">
+                        <h3>Стать брендом на qoopi</h3>
+                        <button class="close-modal-btn" id="closeBrandModalBtn">
+                          &times;
+                        </button>
+                      </div>
+                      <div>
+                        <p class="subtitle">
+                          Заполните анкету и мы свяжемся с вами в ближайшее время
+                        </p>
+                      </div>
+              
+                      <div class="modal-content">
+                        <form id="brand-form">
+                          <div class="form-group">
+                            <label for="brandName" class="required">Название бренда</label>
+                            <input
+                              type="text"
+                              id="brandName"
+                              name="brandName"
+                              required
+                              placeholder="Бренд"
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="categories" class="required">Категории товаров</label>
+                            <div class="custom-select">
+                              <select id="categories" name="categories" required>
+                                <option value="" disabled selected hidden>
+                                  Выберите категории
+                                </option>
+                                <option value="fashion">Мода</option>
+                                <option value="style">Стиль</option>
+                                <option value="beauty">Красота</option>
+                              </select>
+                              <svg
+                                class="select-arrow"
+                                width="12"
+                                height="8"
+                                viewBox="0 0 12 8"
+                                fill="none"
+                              >
+                                <path
+                                  d="M1 1L6 6L11 1"
+                                  stroke="#8A8A8A"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="website" class="required"
+                              >Ссылка на сайт или интернет магазин</label
+                            >
+                            <input
+                              type="url"
+                              id="website"
+                              name="website"
+                              placeholder="https://"
+                              required
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="contactName" class="required">Имя и фамилия</label>
+                            <input
+                              type="text"
+                              id="contactName"
+                              name="contactName"
+                              required
+                              placeholder="Константин Константинопольский"
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="contactEmail" class="required"
+                              >Электронная почта</label
+                            >
+                            <input
+                              type="email"
+                              id="contactEmail"
+                              name="contactEmail"
+                              required
+                              placeholder="example@mail.com"
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="contactPhone" class="required">Номер телефона</label>
+                            <input
+                              type="tel"
+                              id="contactPhone"
+                              name="contactPhone"
+                              required
+                              placeholder="+7"
+                            />
+                          </div>
+                        </form>
+                      </div>
+              
+                      <footer class="modal-footer">
+                        <div class="form-alert" id="brand-form-alert">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle
+                              cx="10"
+                              cy="10"
+                              r="9"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              fill="none"
+                            />
+                            <path
+                              d="M7 7L13 13M13 7L7 13"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                          <span>Заполните все поля</span>
+                        </div>
+                        <div class="checkboxes">
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              id="brandAgreement"
+                              name="brandAgreement"
+                              required
+                            />
+                            <label for="brandAgreement"
+                              >Я принимаю условия&nbsp;
+                              <a href="/policy" target="_blank" class="text-link"
+                                >пользовательского соглашения</a
+                              ></label
+                            >
+                          </div>
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              id="brandNewsletter"
+                              name="brandNewsletter"
+                            />
+                            <label for="brandNewsletter"
+                              >Я согласен получать письма от qoopi</label
+                            >
+                          </div>
+                        </div>
+              
+                        <button type="submit" class="submit-btn" id="submitBrandBtn">
+                          Отправить заявку
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                  <!-- Модальное окно для селлеров -->
+                  <div class="modal-overlay" id="sellerModal">
+                    <div class="modal-container">
+                      <div class="modal-header">
+                        <h3>Стать селлером на qoopi</h3>
+                        <button class="close-modal-btn" id="closeSellerModalBtn">
+                          &times;
+                        </button>
+                      </div>
+                      <div>
+                        <p class="subtitle">
+                          Заполните анкету и мы свяжемся с вами в ближайшее время
+                        </p>
+                      </div>
+              
+                      <div class="modal-content">
+                        <form id="seller-form">
+                          <div class="form-group">
+                            <label for="companyName" class="required"
+                              >Название компании</label
+                            >
+                            <input
+                              type="text"
+                              id="companyName"
+                              name="companyName"
+                              required
+                              placeholder="Компания"
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="productCategories" class="required"
+                              >Категории товаров</label
+                            >
+                            <div class="custom-multiselect">
+                              <div class="select-box" onclick="toggleDropdown()">
+                                <div class="selected-items">
+                                  <span class="placeholder">Выберите категории</span>
+                                </div>
+                                <div class="dropdown-arrow">▼</div>
+                              </div>
+                              <div class="dropdown-content">
+                                <div class="option">
+                                  <input type="checkbox" id="fashion" value="fashion" />
+                                  <label for="fashion">Мода</label>
+                                </div>
+                                <div class="option">
+                                  <input
+                                    type="checkbox"
+                                    id="electronics"
+                                    value="electronics"
+                                  />
+                                  <label for="beauty">Красота</label>
+                                </div>
+                                <div class="option">
+                                  <input type="checkbox" id="home" value="home" />
+                                  <label for="style">Стиль</label>
+                                </div>
+                                <div class="option">
+                                  <input type="checkbox" id="kids" value="kids" />
+                                  <label for="other1">Другое</label>
+                                </div>
+                                <div class="option">
+                                  <input type="checkbox" id="other" value="other" />
+                                  <label for="other2">Другое</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="marketplaceLink" class="required"
+                              >Ссылка на магазин Wildberries или Ozon</label
+                            >
+                            <input
+                              type="url"
+                              id="marketplaceLink"
+                              name="marketplaceLink"
+                              placeholder="https://"
+                              required
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="sellerName" class="required">Имя и фамилия</label>
+                            <input
+                              type="text"
+                              id="sellerName"
+                              name="sellerName"
+                              required
+                              placeholder="Константин Константинопольский"
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="sellerEmail" class="required"
+                              >Электронная почта</label
+                            >
+                            <input
+                              type="email"
+                              id="sellerEmail"
+                              name="sellerEmail"
+                              placeholder="example@mail.com"
+                              required
+                            />
+                          </div>
+              
+                          <div class="form-group">
+                            <label for="sellerPhone" class="required">Номер телефона</label>
+                            <input
+                              type="tel"
+                              id="sellerPhone"
+                              name="sellerPhone"
+                              placeholder="+7"
+                              required
+                            />
+                          </div>
+                        </form>
+                      </div>
+              
+                      <footer class="modal-footer">
+                        <div class="form-alert" id="seller-form-alert">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="10"
+                              cy="10"
+                              r="9"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              fill="none"
+                            />
+                            <path
+                              d="M7 7L13 13M13 7L7 13"
+                              stroke="#FF3B30"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                          <span>Заполните все поля</span>
+                        </div>
+              
+                        <div class="checkboxes">
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              id="sellerAgreement"
+                              name="sellerAgreement"
+                              required
+                            />
+                            <label for="sellerAgreement"
+                              >Я принимаю условия&nbsp;
+                              <a href="/policy" target="_blank" class="text-link"
+                                >пользовательского соглашения</a
+                              ></label
+                            >
+                          </div>
+              
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              id="sellerNewsletter"
+                              name="sellerNewsletter"
+                            />
+                            <label for="sellerNewsletter"
+                              >Я согласен получать письма от goopi</label
+                            >
+                          </div>
+                        </div>
+              
+                        <button type="submit" class="submit-btn" id="submitSellerBtn">
+                          Отправить заявку
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                  <!-- Success Modal -->
+                  <div class="success-modal" id="successModal">
+                    <div class="success-modal__container">
+                      <button class="success-modal__close" id="successModalClose">
+                        &times;
+                      </button>
+                      <div class="success-modal__icon">
+                        <svg
+                          width="84"
+                          height="84"
+                          viewBox="0 0 84 84"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M42 83.6663C65.0116 83.6663 83.6666 65.0113 83.6666 41.9997C83.6666 35.563 82.2071 29.4669 79.6008 24.0248L48.0275 55.598C42.9429 60.683 34.6983 60.683 29.6134 55.598L17.169 43.1534C15.135 41.1193 15.135 37.8218 17.169 35.7876C19.2029 33.7538 22.5007 33.7538 24.5346 35.7876L36.9791 48.2322C37.9962 49.2493 39.645 49.2493 40.6621 48.2322L73.8087 15.0853C66.1658 6.06142 54.7516 0.333008 42 0.333008C18.9881 0.333008 0.333313 18.9878 0.333313 41.9997C0.333313 65.0113 18.9881 83.6663 42 83.6663Z"
+                            fill="#15B385"
+                          />
+                        </svg>
+                      </div>
+                      <div class="success-modal__message">Ваша заявка отправлена</div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">© qoopi 2025</div>
+                <a href="privacy/privacy.html" class="privacy-link">Правила обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

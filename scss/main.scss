@@ -1,0 +1,25 @@
+//base
+@import './base/_reset';
+@import './base/_vars';
+@import './base/_base';
+
+//blocks
+@import './blocks/_header';
+@import './blocks/_menu';
+@import './blocks/_nav';
+@import './blocks/_content';
+@import './blocks/_bg-img';
+@import './blocks/_footer';
+@import './blocks/_carousel-home';
+@import './blocks/_blogers-img';
+@import './blocks/_carousel-brends';
+
+//form
+@import './form//_fonts';
+@import './form/_interfaceModal';
+@import './form/_error';
+@import './form/_droppedList';
+@import './form/_policy';
+@import './form/_modal-brand';
+@import './form/_modal-seller';
+@import './form/_success';

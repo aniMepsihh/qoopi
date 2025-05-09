@@ -1,0 +1,52 @@
+.media-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 115px;
+    padding-right: 50px;
+    margin-top: -60px;
+}
+
+.video-photo-container {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    width: 320px;
+    height: 470px;
+    z-index: 2;
+}
+
+.blogers-photo {
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    top: 310px;
+    left: 185px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.blogers-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.phone-image {
+    width: 395px;
+    height: 770px;
+    object-fit: contain;
+    z-index: 2;
+    margin-top: -50px;
+}

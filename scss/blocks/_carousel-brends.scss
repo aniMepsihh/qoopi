@@ -1,0 +1,50 @@
+.carousel-container-brends {
+    position: relative;
+    width: 350px;
+    height: 100vh;
+}
+
+.media-stack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    padding: 16px 0;
+}
+
+.media-item {
+    position: relative;
+    width: 350px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.media-item video {
+    width: 350px;
+    height: 518px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.media-item:last-child {
+    margin-bottom: 0;
+}
+
+.outline-photo{
+    position: fixed;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.67) 99%);
+    border-radius: 8px;
+}
+.outline-video{
+    position: fixed;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.67) 99%);
+    border-radius: 8px;
+}

@@ -1,0 +1,90 @@
+.content-container {
+    position: relative;
+}
+
+.content-container__home{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+
+}
+
+.content-container__blogers{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.section__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 820px;
+  padding-top: 80px;
+}
+
+.section__carousel{
+    position: fixed;
+    right: 200px;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    gap: 16px;
+}
+
+.section__carousel-brends{
+    position: fixed;
+    right: 200px;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    gap: 16px;
+}
+
+.section__content{
+    max-width: 900px;
+}
+
+/* Стили для контентных блоков */
+.content-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 820px;
+    padding-top: 80px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+
+.content-section.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.content-section h2{
+    padding-bottom: 40px;
+}
+.content-section p{
+    color: #8A8A8A;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    padding-bottom: 80px;
+}
+
+.content-section__button{
+padding: 24px 40px;
+background-color: #793EED;
+color: #f1f1f1;
+font-family: "Manrope", sans-serif;
+font-size: 24px;
+line-height: 28px;
+font-weight: 700;
+gap: 10px;
+width: 284px;
+height: 76px;
+border-radius: 12px;
+}
